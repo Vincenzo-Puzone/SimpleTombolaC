@@ -20,19 +20,14 @@ int main (){
             x++;
         }while(x<15);
 
-        for(int i = 0; i < 3;i++){
-            for(int j = 0; j < 9; j++){
-                mat[i][j]=0;
-            }
-        }
-
         n=0;
         x=0;
 
         for(int i = 0; i < 3;i++){
             for(int j = 0; j < 9; j++){
                 n=rand()%2;
-                if(n == 1 && x < 15) mat[i][j]=n_estratti[x++];
+                if( n == 1 ) mat[i][j]=n_estratti[x++];
+                else mat[i][j]=0;
             }
         }
 
