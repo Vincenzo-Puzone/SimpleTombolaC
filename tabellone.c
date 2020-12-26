@@ -18,7 +18,12 @@ int main (){
                 }
                 if(check == 0){
                     printf("numero generato %d \n",n);
-                    printf("%d\n",x+1);
+                    printf("contatore: %d\n",x+1);
+                    printf("numeri estratti: \n");
+                    for (int i = 0; i < x; i++){
+                        printf("%d\t",n_estratti[i]);
+                    }
+                    printf("\n");
                     system("pause");
                     system("cls");
                 }
